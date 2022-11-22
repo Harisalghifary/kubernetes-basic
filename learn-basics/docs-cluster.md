@@ -21,3 +21,10 @@ Kubernetes cluster consist of two types of resources:
   - Using Kubernetes API to communicate with the control plane or to direct interact with the cluster
 
 Minikube is a lightweight Kubernetes implementation that creates a VM on local machine and deploys a simple cluster containing only one node.
+
+Basic Syntax :
+
+- `minikube addons list`
+- `minikube addons enable ingress`
+- `minikube stop`
+- `minikube delete`
