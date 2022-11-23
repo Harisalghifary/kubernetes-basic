@@ -35,3 +35,23 @@ Basic Syntax :
 Pod
 
 > A pod is a group of one or more application containers (Such as Docker) and includes shared storage (volumes), IP address and information about how to run them (container image version or spesific ports to use).
+
+- Each Pod has a unique IP address and not exposed outside the cluster without a Service.
+
+Nodes
+
+> A Pod always runs on a Node, a worker machine in Kubernetes and may be either a virtual or a physical machine, depending on the cluster.
+
+- Each Node is managed by the control plane.
+- A Node can have multiple pods
+- Control Plane automatically handles scheduling the pods across the Nodes in the cluster.
+- Run Kubelet and Container runtime (like docker)
+  ![nodes](../img/module_03_nodes.svg)
+  source : https://kubernetes.io/docs
+
+Troubleshooting with kubectl
+
+- `kubectl get`, list resources
+- `kubectl describe`, show detailed information about a resource
+- `kubectl logs`, print the logs from a container in a pod
+- `kubectl exec`, execute a command on container in a pod
