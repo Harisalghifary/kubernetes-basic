@@ -7,6 +7,7 @@
 - Learn about a Service in Kubernetes
 - Understand how labels and LabelSelector objects relate to a Service
 - Expose an application outside a Kubernetes cluster using a Service
+- Scale an app using kubectl
 
 ### Using kubectl to Create a Deployment
 
@@ -54,3 +55,10 @@ Service and Label</br>
 - Classify an object using tags
 
 ![label-and-selector](/img/module_04_labels.svg)
+
+### Scaling an application
+
+Deployement (create only one Pod) -> Service (exposed). Scaling is accomplished by changing the number of replicas in a Deployment.
+
+To see Replica : `kubectl get rs` </br>
+Name of the ReplicaSet formatted as `[DEPLOYMENT-NAME]-[RANDOM-STRING]
