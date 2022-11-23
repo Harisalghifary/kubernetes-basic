@@ -4,6 +4,9 @@
 
 - Learn what a Kubnernetes cluster is
 - Learn what Minkube is
+- Learn about Kubernetes Pods
+- Learn about Kubernetes Nodes
+- Troubleshoot deployed applications
 
 Kubernetes is a production-ready opensource tool for orchestrates of application containers within and across computer clusters.
 
@@ -28,3 +31,7 @@ Basic Syntax :
 - `minikube addons enable ingress`
 - `minikube stop`
 - `minikube delete`
+
+Pod
+
+> A pod is a group of one or more application containers (Such as Docker) and includes shared storage (volumes), IP address and information about how to run them (container image version or spesific ports to use).
